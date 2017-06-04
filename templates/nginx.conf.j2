@@ -49,8 +49,8 @@ http {
 {% endif %}
 
   sendfile {{nginx_sendfile}};
-  tcp_nopush on;
-  tcp_nodelay on;
+  tcp_nopush {{ nginx_tcp_nopush }};
+  tcp_nodelay {{nginx_tcp_nodelay}};
 
 {% if nginx_keepalive == 'on' %}
   # Timeouts

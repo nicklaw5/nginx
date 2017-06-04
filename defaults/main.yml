@@ -29,6 +29,8 @@ nginx_disable_access_log: no
 nginx_server_tokens: 'off'
 nginx_sendfile: 'on'
 nginx_keepalive: "on"
+nginx_tcp_nopush: "off"
+nginx_tcp_nodelay: "on"
 nginx_keepalive_timeout: "30"
 nginx_client_body_timeout: "10"
 nginx_client_header_timeout: "10"
