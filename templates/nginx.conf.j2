@@ -12,7 +12,7 @@ pid        {{nginx_pid}};
 
 events {
   worker_connections  {{nginx_worker_connections}};
-{% if nginx_multi_accept %}
+{% if nginx_multi_accept == 'on' %}
   multi_accept on;
 {% endif %}
 {% if nginx_event %}
